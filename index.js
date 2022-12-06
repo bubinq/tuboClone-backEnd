@@ -32,7 +32,6 @@ app.use(
 );
 app.use(cookieParser());
 app.use(express.json());
-app.use("/public", express.static("public"));
 app.use("/api/auth", authRouter);
 app.use("/api/video", videoRouter);
 app.use("/api/comment", commentRouter);
